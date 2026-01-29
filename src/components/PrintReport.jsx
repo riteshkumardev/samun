@@ -18,14 +18,14 @@ const PrintReport = ({ data, title, onDelete, onEdit, onMemberClick }) => {
       {/* 🏢 OFFICIAL HEADER */}
       <div className="text-center mb-6 border-b-4 border-double border-gray-900 pb-4">
         <h1 className="text-3xl font-black uppercase tracking-tighter text-blue-900">
-          Anjaney Digital Ledger
+          Bihar Digital Ledger
         </h1>
         <p className="text-lg font-bold text-gray-700 mt-1">
           {title || "SAMUH DAILY PASSBOOK"}
         </p>
         <div className="flex justify-between mt-4 text-[10px] sm:text-xs font-bold uppercase text-gray-500">
           <span>📅 Date: {new Date().toLocaleDateString('hi-IN')}</span>
-          <span>📍 Bihar Samuh Management Style</span>
+          <span>📍 Bihar Samuh Statement</span>
         </div>
       </div>
 
@@ -140,7 +140,7 @@ const PrintReport = ({ data, title, onDelete, onEdit, onMemberClick }) => {
 
       {/* 📜 FOOTNOTE */}
       <div className="mt-8 text-[9px] text-gray-400 text-center italic invisible print:visible">
-        * Yeh ek computer-generated digital statement hai, Anjaney Digital Ledger dwara pradan kiya gaya.
+        * Yeh ek computer-generated digital statement hai, Bihar Digital Ledger dwara pradan kiya gaya.
       </div>
     </div>
   );

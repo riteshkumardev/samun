@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar";
 import MemberDetails from "./pages/MemberDetails";
 import RegisterPage from "./pages/RegisterPage";
 import TransactionForm from "./components/TransactionForm";
+import MemberRegistration from "./pages/MemberRegistration"; // Naya Page
+import MemberList from "./pages/MemberList"; // Naya Page
 
 function App() {
   const [user, setUser] = useState(null);
@@ -36,8 +38,8 @@ function App() {
     return (
       <div className="h-screen flex flex-col items-center justify-center bg-gray-50">
         <div className="w-12 h-12 border-4 border-blue-900 border-t-transparent rounded-full animate-spin mb-4"></div>
-        <div className="text-xl font-black text-blue-900 animate-pulse tracking-tighter">
-          ANJANEY SAMUH APP LOADING...
+        <div className="text-xl font-black text-blue-900 animate-pulse tracking-tighter uppercase">
+          Bihar Ledger Loading...
         </div>
       </div>
     );
@@ -51,19 +53,16 @@ function App() {
             <Navbar user={user} handleLogout={handleLogout} />
             <main className="flex-grow">
               <Routes>
-                {/* 🏠 Main Dashboard */}
                 <Route path="/" element={<Dashboard />} />
-                
-                {/* ➕ Nayi Entry */}
                 <Route path="/new-entry" element={<TransactionForm />} />
                 
-                {/* 👤 User Registration */}
-                <Route path="/register" element={<RegisterPage />} />
+                {/* 👥 Member Management Routes */}
+                <Route path="/add-member" element={<MemberRegistration />} />
+                <Route path="/member-list" element={<MemberList />} />
                 
-                {/* 📄 Member Ki Passbook (Dynamic Route) */}
+                <Route path="/register" element={<RegisterPage />} />
                 <Route path="/member/:name" element={<MemberDetails />} />
                 
-                {/* Galat URL par Dashboard par wapas bhejein */}
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </main>

@@ -11,7 +11,7 @@ const Navbar = ({ user, handleLogout }) => {
         </div>
         <div>
           <h1 className="text-sm sm:text-xl font-black tracking-tighter uppercase leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-blue-200">
-            Anjaney Digital Ledger
+            Bihar Digital Ledger
           </h1>
           <p className="text-[9px] sm:text-[10px] text-blue-400 font-bold hidden xs:block tracking-widest mt-0.5">
             BIHAR SAMUH MANAGEMENT SYSTEM

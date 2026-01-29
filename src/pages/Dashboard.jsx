@@ -57,7 +57,7 @@ const Dashboard = () => {
       {/* 🟦 SIDEBAR - Navigation Control */}
       <aside className={`no-print bg-blue-900 text-white transition-all duration-300 shadow-2xl ${isSidebarOpen ? 'w-64' : 'w-20'} sticky top-0 h-screen hidden md:flex flex-col`}>
         <div className="p-4 flex justify-between items-center border-b border-blue-800">
-          {isSidebarOpen && <span className="font-black text-xl tracking-tighter">Bihar NAV</span>}
+          {isSidebarOpen && <span className="font-black text-xl tracking-tighter">NAV</span>}
           <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="p-2 hover:bg-blue-800 rounded-lg">
             {isSidebarOpen ? '◀' : '▶'}
           </button>
